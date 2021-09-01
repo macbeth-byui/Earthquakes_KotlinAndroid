@@ -42,4 +42,6 @@ class EarthquakeReader(private val activity: MainActivity): Runnable {
         Log.e("EarthquakeReader", e.toString())
         activity.runOnUiThread(Runnable { activity.displayToast("Error Reading USGS Server") })
     }
+
+
 }
